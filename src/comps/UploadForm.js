@@ -23,6 +23,7 @@ setError('Please select an image file (png or jpeg)')
    <label>
     <input type="file" onChange={changeHandler} />
     <span>+</span>
+    {/* <GrAddCircle/> */}
    </label>
     <div className="output">
     {error && <div className="error">{error}</div> }
