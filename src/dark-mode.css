@@ -3,7 +3,9 @@
   --text-color: #ffffff;
 }
 
-.dark-mode{
-background-color: var(--bg-color);
-color: var(--text-color);
+.dark-mode {
+  --bg: var(--bg-color);
+  --text: var(--text-color);
+  background-color: var(--bg);
+  color: var(--text);
 }

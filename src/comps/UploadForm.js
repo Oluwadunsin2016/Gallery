@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import ProgressBar from './ProgressBar';
+import { MdAddCircle } from 'react-icons/md';
+import { IoAddCircleOutline } from 'react-icons/io5';
 
 const UploadForm = () => {
 const [file, setFile] = useState(null);
@@ -20,11 +22,10 @@ setError('Please select an image file (png or jpeg)')
 
   return (
     <form>
-   <label>
-    <input type="file" onChange={changeHandler} />
-    <span>+</span>
-    {/* <GrAddCircle/> */}
-   </label>
+    <input type="file" id='fileInput' onChange={changeHandler} />
+    <MdAddCircle className='circlePlus' size={40} onClick={() =>
+                        document.getElementById("fileInput").click()
+                      }/>
     <div className="output">
     {error && <div className="error">{error}</div> }
     {file && <div>{file.name}</div> }

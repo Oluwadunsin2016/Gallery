@@ -3,7 +3,9 @@
   --text-color: #333333;
 }
 
-.light-mode{
-background-color: var(--bg-color);
-color: var(--text-color);
+.light-mode {
+  --bg: var(--bg-color);
+  --text: var(--text-color);
+  background-color: var(--bg);
+  color: var(--text);
 }
